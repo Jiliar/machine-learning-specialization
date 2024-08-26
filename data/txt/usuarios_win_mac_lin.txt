@@ -1,0 +1,11 @@
+Nombre,Edad,Ciudad
+Pedro,26,Málaga
+Lucía,59,Valencia
+Miguel,55,Zaragoza
+María,56,Bilbao
+Sofía,58,Zaragoza
+Pedro,38,Alicante
+Carlos,54,Barcelona
+María,39,Zaragoza
+Luis,56,Sevilla
+María,44,Murcia
