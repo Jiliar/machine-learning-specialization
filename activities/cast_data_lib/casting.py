@@ -9,12 +9,12 @@ def casting_data(df: pd.DataFrame, column, dtype) -> Optional[pd.DataFrame]:
         df[column] = pd.to_numeric(df[column], errors='coerce')
     
     # Check if dtype is 'string'
-    else if dtype == 'string':
+    elif dtype == 'string':
         # Convert the specified column to string type
         df[column] = df[column].astype('string', errors='ignore')
     
     # Check if dtype is 'date'
-    else if dtype == 'date':
+    elif dtype == 'date':
         # Convert the specified column to datetime type
         df[column] = pd.to_datetime(df[column], errors='coerce')
     
