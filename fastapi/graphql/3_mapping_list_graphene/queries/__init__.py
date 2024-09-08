@@ -1,0 +1,1 @@
+from queries.course_query import *
