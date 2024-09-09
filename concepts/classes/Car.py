@@ -5,6 +5,8 @@ class Car1:
         
     def __init__(self):
         print('<< init >>')
+        
+#Note: self refers to the same object
 
 #Note: __init__ is a method to init instance variable (it is a kind of constructor for programming languages like Java)
 #__new__ is used to customize actions when we are creating instances.
