@@ -46,7 +46,7 @@ class Car3:
         print('<< del >>')
 
 car = Car3()
-#__del__ is a destructor method to remove an instance, it's an analogy of the Java's Garbage collector
+#__del__ is a destructor method to remove an instance, but he runs instructions before object is destroyed.
 # This method could be called to create instructions in the specific moment that the instance will destroy.
 
 

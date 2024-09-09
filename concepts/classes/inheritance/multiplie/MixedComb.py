@@ -1,6 +1,5 @@
 from Hawaiian import Hawaiian
 from Pepperoni import Pepperoni
-from Pizza import Pizza
 
 class MixedComb(Hawaiian, Pepperoni):
     

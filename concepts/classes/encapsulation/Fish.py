@@ -3,7 +3,7 @@ class Fish:
     def __init__(self, weight, height, __type):
         self.weight = weight # public convention
         self._height = height # private convention
-        self.__type = __type #name magling: Python interpreter change the name of variable to avoid collisions or overriding
+        self.__type = __type #name magling: Python interpreter change the name of variable to avoid collisions or overriding with Subclasses in Inheritance scenario.
     
     def _swim(self): # If start with underscore '_' private access convention
         print('Swiming like a Fish!')
