@@ -2,6 +2,8 @@
 
 Este repositorio contiene libros organizados en las carpetas `week_0`, `week_1`, `week_2`, y `week_3`. Para ejecutar los libros correctamente, es necesario usar **Google Colab** y seguir el procedimiento para importar la carpeta `data`, ya que el código se enlaza directamente con **Google Drive** para el acceso a los archivos.
 
+Los libros de la carpeta `activities` no tienen dependencia con ningun un entorno de trabajo definido, es decir, pueden ser ejecutados con cualquier herramienta: VSCode, JupyterLab, Colab etc.
+
 ## 🚀 Instrucciones de Ejecución en Google Colab
 
 1. **Abrir Google Colab**: Sube el libro (archivo `.ipynb`) que deseas ejecutar a Colab o ábrelo directamente desde el repositorio.
