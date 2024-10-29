@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Evaluación de Calidad de Vinos</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Evaluación de Calidad de Vinos (1)</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14684,6 +14684,34 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="%E2%AD%95%EF%B8%8F-Metodolog%C3%ADa"><strong>&#11093;&#65039; Metodolog&#237;a</strong><a class="anchor-link" href="#%E2%AD%95%EF%B8%8F-Metodolog%C3%ADa">&#182;</a></h4>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Para abordar la mejora en la clasificación de los vinos y proporcionar una evaluación más objetiva y confiable, se propone una metodología de análisis y modelado basada en un enfoque de Machine Learning. Inicialmente, se realiza una exploración exhaustiva de los datos para comprender su distribución, detectar patrones y evaluar su calidad. Posteriormente, se efectúa una limpieza y, de ser necesario, imputación de valores faltantes para asegurar un conjunto de datos coherente y libre de sesgos. La solución incluye el desarrollo de dos tipos de pipelines de Regresión Logística:</p>
+<ol>
+<li>Un <strong>Pipeline de Regresión Logística con Preprocesamiento Escalar Estándar</strong>, que aplica escalamiento uniforme a las variables numéricas, y </li>
+<li>Un <strong>Pipeline de Preprocesamiento Mixto utilizando ColumnTransformer</strong>, diseñado para manejar múltiples clases mediante la transformación adecuada de variables categóricas y numéricas.</li>
+</ol>
+<p>Finalmente, se analizan los estadísticos de validación para evaluar el rendimiento de los modelos y su capacidad predictiva, lo cual permitirá no solo una clasificación precisa sino también una optimización en la satisfacción del cliente y el posicionamiento en el mercado.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="%F0%9F%94%8D-1.-Exploraci%C3%B3n-de-los-datos"><strong>&#128269; 1. Exploraci&#243;n de los datos</strong><a class="anchor-link" href="#%F0%9F%94%8D-1.-Exploraci%C3%B3n-de-los-datos">&#182;</a></h3><h4 id="%E2%AD%95%EF%B8%8F-Introducci%C3%B3n-a-la-Fase-de-Exploraci%C3%B3n-de-Datos"><strong>&#11093;&#65039; Introducci&#243;n a la Fase de Exploraci&#243;n de Datos</strong><a class="anchor-link" href="#%E2%AD%95%EF%B8%8F-Introducci%C3%B3n-a-la-Fase-de-Exploraci%C3%B3n-de-Datos">&#182;</a></h4><p>En esta fase inicial del análisis de datos, se realiza una exploración preliminar del conjunto de datos para comprender su estructura y características básicas. Esta etapa es crucial para identificar los aspectos fundamentales del dataset y preparar el terreno para un análisis más profundo.</p>
 <p>Durante la exploración, se utilizan diversas instrucciones para obtener una visión general del conjunto de datos:</p>
 <ul>
@@ -16359,7 +16387,7 @@ Variables cualitativas:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%E2%9A%9B%EF%B8%8F-LogisticRegression">&#9883;&#65039; LogisticRegression<a class="anchor-link" href="#%E2%9A%9B%EF%B8%8F-LogisticRegression">&#182;</a></h3>
+<h3 id="%E2%9A%9B%EF%B8%8F-Pipeline-de-Regresi%C3%B3n-Log%C3%ADstica-con-Preprocesamiento-Escalar-Estandar">&#9883;&#65039; Pipeline de Regresi&#243;n Log&#237;stica con Preprocesamiento Escalar Estandar<a class="anchor-link" href="#%E2%9A%9B%EF%B8%8F-Pipeline-de-Regresi%C3%B3n-Log%C3%ADstica-con-Preprocesamiento-Escalar-Estandar">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -18081,7 +18109,69 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%E2%9A%9B%EF%B8%8F-Pipeline-de-Regresi%C3%B3n-Log%C3%ADstica-con-Preprocesamiento-Mixto-(Multiple-Clases)">&#9883;&#65039; <strong>Pipeline de Regresi&#243;n Log&#237;stica con Preprocesamiento Mixto (Multiple Clases)</strong><a class="anchor-link" href="#%E2%9A%9B%EF%B8%8F-Pipeline-de-Regresi%C3%B3n-Log%C3%ADstica-con-Preprocesamiento-Mixto-(Multiple-Clases)">&#182;</a></h3>
+<h4 id="%F0%9F%94%8E-Interpretaci%C3%B3n-de-Estadisticos-de-Validaci%C3%B3n"><strong>&#128270; Interpretaci&#243;n de Estadisticos de Validaci&#243;n</strong><a class="anchor-link" href="#%F0%9F%94%8E-Interpretaci%C3%B3n-de-Estadisticos-de-Validaci%C3%B3n">&#182;</a></h4>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<table>
+<thead><tr>
+<th>Estadístico</th>
+<th>Valor</th>
+<th>Interpretación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Exactitud</strong></td>
+<td>0.9977</td>
+<td>El modelo logró clasificar correctamente el 99.77% de las muestras, mostrando una alta precisión en la distinción entre vino tinto y vino blanco.</td>
+</tr>
+<tr>
+<td><strong>Precisión (Micro)</strong></td>
+<td>0.9977</td>
+<td>La precisión micro indica un equilibrio general adecuado entre las predicciones verdaderas y falsas en todas las muestras, con muy pocos errores en la clasificación.</td>
+</tr>
+<tr>
+<td><strong>Sensibilidad</strong></td>
+<td>0.9977</td>
+<td>Con esta sensibilidad, el modelo identificó correctamente casi todas las muestras de vino blanco y tinto, lo cual indica una gran capacidad para detectar ambas clases.</td>
+</tr>
+<tr>
+<td><strong>Valor F1</strong></td>
+<td>0.9977</td>
+<td>El valor F1 refuerza la precisión y sensibilidad del modelo al evaluar el equilibrio entre ambas métricas, ideal para escenarios con clases balanceadas.</td>
+</tr>
+<tr>
+<td><strong>Curva Precisión-Recall</strong></td>
+<td>1 Falso Negativo</td>
+<td>Al establecer un umbral de probabilidad de 0.1, solo se produce un falso negativo, lo que evidencia una alta efectividad en la predicción con bajo error.</td>
+</tr>
+<tr>
+<td><strong>Área bajo la curva (AUC)</strong></td>
+<td>0.9999</td>
+<td>La AUC cercana a 1 indica que el modelo separa casi perfectamente las clases de vino blanco y tinto, mostrando un excelente rendimiento general.</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="%E2%9A%9B%EF%B8%8F-Pipeline-de-Preprocesamiento-Mixto-basado-en-ColumnTransformer">&#9883;&#65039; <strong>Pipeline de Preprocesamiento Mixto basado en ColumnTransformer</strong><a class="anchor-link" href="#%E2%9A%9B%EF%B8%8F-Pipeline-de-Preprocesamiento-Mixto-basado-en-ColumnTransformer">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -18749,7 +18839,7 @@ weighted avg       1.00      1.00      1.00      1300
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="%E2%AD%95%EF%B8%8F-Analisis-de-Informe-de-clasificaci%C3%B3n"><strong>&#11093;&#65039; Analisis de Informe de clasificaci&#243;n</strong><a class="anchor-link" href="#%E2%AD%95%EF%B8%8F-Analisis-de-Informe-de-clasificaci%C3%B3n">&#182;</a></h4>
+<h4 id="%F0%9F%9F%A2-Analisis-de-Informe-de-clasificaci%C3%B3n"><strong>&#128994; Analisis de Informe de clasificaci&#243;n</strong><a class="anchor-link" href="#%F0%9F%9F%A2-Analisis-de-Informe-de-clasificaci%C3%B3n">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -19443,7 +19533,7 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="%E2%AD%95%EF%B8%8F-Guardar-el-Pipeline-Completo-(Preprocesador-+-Modelo)"><strong>&#11093;&#65039; Guardar el Pipeline Completo (Preprocesador + Modelo)</strong><a class="anchor-link" href="#%E2%AD%95%EF%B8%8F-Guardar-el-Pipeline-Completo-(Preprocesador-+-Modelo)">&#182;</a></h4><p>Finalmente, guardamos el pipeline completo (incluyendo el modelo entrenado) en un archivo <code>joblib</code>.</p>
+<h4 id="%F0%9F%9F%A2-Guardar-el-Pipeline-Completo-(Preprocesador-+-Modelo)"><strong>&#128994; Guardar el Pipeline Completo (Preprocesador + Modelo)</strong><a class="anchor-link" href="#%F0%9F%9F%A2-Guardar-el-Pipeline-Completo-(Preprocesador-+-Modelo)">&#182;</a></h4><p>Finalmente, guardamos el pipeline completo (incluyendo el modelo entrenado) en un archivo <code>joblib</code>.</p>
 
 </div>
 </div>
@@ -19496,7 +19586,7 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="%E2%AD%95%EF%B8%8F-Cargar-procesamiento-de-Modelo-wine_quality_model_multiclass_mixed_preprocessing"><strong>&#11093;&#65039; Cargar procesamiento de Modelo <code>wine_quality_model_multiclass_mixed_preprocessing</code></strong><a class="anchor-link" href="#%E2%AD%95%EF%B8%8F-Cargar-procesamiento-de-Modelo-wine_quality_model_multiclass_mixed_preprocessing">&#182;</a></h4>
+<h4 id="%F0%9F%9F%A2-Cargar-procesamiento-de-Modelo-wine_quality_model_multiclass_mixed_preprocessing"><strong>&#128994; Cargar procesamiento de Modelo <code>wine_quality_model_multiclass_mixed_preprocessing</code></strong><a class="anchor-link" href="#%F0%9F%9F%A2-Cargar-procesamiento-de-Modelo-wine_quality_model_multiclass_mixed_preprocessing">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -19806,6 +19896,74 @@ Input:
 
 </div>
 
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="%F0%9F%94%8E-Interpretaci%C3%B3n-de-Estadisticos-de-Validaci%C3%B3n"><strong>&#128270; Interpretaci&#243;n de Estadisticos de Validaci&#243;n</strong><a class="anchor-link" href="#%F0%9F%94%8E-Interpretaci%C3%B3n-de-Estadisticos-de-Validaci%C3%B3n">&#182;</a></h4>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<table>
+<thead><tr>
+<th>Estadístico</th>
+<th>Valor</th>
+<th>Interpretación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Exactitud</strong></td>
+<td>1.0</td>
+<td>La exactitud perfecta indica que el modelo clasificó correctamente todas las muestras en cada clase de calidad del vino, demostrando un rendimiento sin errores.</td>
+</tr>
+<tr>
+<td><strong>Precisión (Micro)</strong></td>
+<td>1.0</td>
+<td>La precisión micro de 1.0 refleja que el modelo no cometió errores en ninguna clase de vino, lo cual es ideal en escenarios multiclase con distribuciones balanceadas.</td>
+</tr>
+<tr>
+<td><strong>Sensibilidad</strong></td>
+<td>1.0</td>
+<td>La sensibilidad perfecta significa que el modelo identificó correctamente todas las muestras de cada clase, sin pasar por alto ninguna instancia relevante.</td>
+</tr>
+<tr>
+<td><strong>Valor F1</strong></td>
+<td>1.0</td>
+<td>El valor F1 de 1.0 indica un equilibrio perfecto entre precisión y sensibilidad en todas las clases, siendo óptimo para la clasificación de la calidad de los vinos.</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
 </div>
 
 </div>
